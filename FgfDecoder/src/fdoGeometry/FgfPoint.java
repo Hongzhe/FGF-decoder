@@ -4,7 +4,7 @@ import fgfUtil.ByteReader;
 import fgfUtil.FgfUtil;
 
 /**********
- * Corresponding java class implementation for FDO Point
+ * Implementation of Fgf Point
  * struct point {
  * 	int geomType;
  *  CoordinateDimensionality type;

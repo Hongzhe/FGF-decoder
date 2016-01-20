@@ -4,7 +4,7 @@ import fgfUtil.ByteReader;
 import fgfUtil.FgfUtil;
 
 /******
- * Corresponding java class implementation for FDO LineString
+ * Implementation for FGF LineString
  * struct LineString {
  * 	int geomType;
  * 	CoordinateDimensionality type;
