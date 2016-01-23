@@ -36,10 +36,11 @@ public class FgfMultiPoint extends FgfGeometry {
         int numPoints = getCount();
         int coordNum = FgfUtil.typeToNumOrdinates(getDimensionliaty());
         int length = 8 * coordNum + 8;
+        int offset = 8 + index * length;
         if(index > numPoints - 1) {
             throw new FgfGeometryException("Index out of bound.");
         }
-        byte[] bytes = Arrays.copyOfRange(fgf, (index)*length, (index)*length+length);
+        byte[] bytes = Arrays.copyOfRange(fgf, offset, offset + length);
         return new FgfPoint(bytes);
     }
 }
